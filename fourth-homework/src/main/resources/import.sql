@@ -1,0 +1,91 @@
+INSERT INTO instructors (instructor_id, phone_number, name, address, created_date, last_modified_date) VALUES
+(1, '+905055557550', 'PI1', 'PI1Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(2, '+905055557551', 'PI2', 'PI2Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(3, '+905055557552', 'PI3', 'PI3Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(4, '+905055557553', 'PI4', 'PI4Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(5, '+905055557554', 'PI5', 'PI5Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(6, '+905055557560', 'VR1', 'VR1Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(7, '+905055557561', 'VR2', 'VR2Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(8, '+905055557562', 'VR3', 'VR3Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(9, '+905055557563', 'VR4', 'VR4Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(10, '+905055557564', 'VR5', 'VR5Address', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO permanent_instructors (instructor_id, fixed_salary) VALUES
+(1, 10000),
+(2, 5500),
+(3, 4000),
+(4, 16000),
+(5, 21500);
+
+INSERT INTO visiting_researchers (instructor_id, hourly_salary) VALUES
+(6, 55.19),
+(7, 88),
+(8, 49.9),
+(9, 112.1),
+(10, 35.5);
+
+INSERT INTO courses (course_id, instructor_id, code, name, credit_score, created_date, last_modified_date) VALUES
+(1, 1, 'code1', 'Course1', 7, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(2, 2, 'code2', 'Course2', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(3, 3, 'code3', 'Course3', 5, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(4, 2, 'code4', 'Course4', 9, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(5, 2, 'code5', 'Course5', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(6, 4, 'code6', 'Course6', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(7, 5, 'code7', 'Course7', 3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(8, 8, 'code8', 'Course8', 6, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(9, 8, 'code9', 'Course9', 8, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(10, 9, 'code10', 'Course10', 9, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO students (student_id, name, address, birth_date, gender, created_date, last_modified_date) VALUES
+(1, 'Student1', 'StudentAddress1', '1999-03-03', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(2, 'Student2', 'StudentAddress2', '1984-06-22', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(3, 'Student3', 'StudentAddress3', '1994-07-11', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(4, 'Student4', 'StudentAddress4', '1996-01-30', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(5, 'Student5', 'StudentAddress5', '2001-12-19', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(6, 'Student6', 'StudentAddress6', '1997-04-13', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(7, 'Student7', 'StudentAddress7', '1992-05-18', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(8, 'Student8', 'StudentAddress8', '1989-02-06', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(9, 'Student9', 'StudentAddress9', '1982-11-24', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(10, 'Student10', 'StudentAddress10', '1999-10-29', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(11, 'Student11', 'StudentAddress11', '2002-12-31', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(12, 'Student12', 'StudentAddress12', '2003-01-01', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(13, 'Student13', 'StudentAddress13', '2000-08-04', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(14, 'Student14', 'StudentAddress14', '2000-09-15', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(15, 'Student15', 'StudentAddress15', '1985-10-10', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(16, 'Student16', 'StudentAddress16', '1995-01-14', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(17, 'Student17', 'StudentAddress17', '1996-12-21', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(18, 'Student18', 'StudentAddress18', '1998-10-20', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(19, 'Student19', 'StudentAddress19', '2001-08-08', 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+(20, 'Student20', 'StudentAddress20', '1987-07-26', 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO student_course (student_id, course_id) VALUES
+(1, 1),
+(1, 3),
+(1, 4),
+(1, 8),
+(2, 2),
+(2, 5),
+(2, 7),
+(2, 8),
+(2, 9),
+(2, 10),
+(3, 6),
+(3, 9),
+(4, 1),
+(4, 4),
+(4, 10),
+(5, 1),
+(6, 3),
+(6, 7),
+(6, 10),
+(7, 2),
+(7, 3),
+(7, 4),
+(7, 5),
+(8, 8),
+(9, 4),
+(9, 5),
+(9, 10),
+(10, 4),
+(10, 6),
+(10, 9);
