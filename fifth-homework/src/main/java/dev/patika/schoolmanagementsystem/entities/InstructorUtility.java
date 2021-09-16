@@ -19,7 +19,7 @@ public class InstructorUtility extends EntityUtility<Instructor> {
      */
     public void addCourse(Course course) {
         Assert.notNull(course, "course must not be null");
-        clazz.getCourses().remove(course);
+        clazz.getCourses().add(course);
         course.setInstructor(clazz);
     }
 

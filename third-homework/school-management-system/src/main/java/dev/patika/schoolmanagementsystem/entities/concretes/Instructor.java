@@ -67,7 +67,7 @@ public class Instructor {
      * @param course element to be added to this instructor.
      */
     public void addCourse(Course course) {
-        courses.remove(course);
+        courses.add(course);
         course.setInstructor(this);
     }
 
